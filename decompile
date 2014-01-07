@@ -1,0 +1,21 @@
+# Usage: "decompile Settings" to decompile the Settings.apk
+
+frameworkSrcPath="xmos_device_tass_api17_fn_framework-res"
+
+userName="$USER"
+rm -r "/Users/$userName/Library/apktool/framework"
+
+if [[ "$1" == "" ]]
+    then
+      echo 'Error: No Name given. Please type "decompile AppName" to decompile AppName.apk'
+    exit 1 
+  fi
+
+appName=$1
+
+sourcePath=$(realpath ..)
+thisDir=${PWD##*/}
+
+echo "Decompiling to $sourcePath/$thisDir/$appName"
+apktool if "$sourcePath/$frameworkSrcPath/framework-res.apk"
+apktool d -f "$sourcePath/$thisDir/$appName.apk" "$sourcePath/$thisDir/$appName"

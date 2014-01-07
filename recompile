@@ -1,0 +1,18 @@
+# Usage: "recompile Settings" to recompile the Settings.apk
+
+if [[ "$1" == "" ]]
+    then
+      echo 'Error: No Name given. Please type "recompile AppName" to recompile AppName.apk'
+    exit 1 
+  fi
+
+appName=$1
+
+sourcePath=$(realpath ..)
+thisDir=${PWD##*/}
+
+echo "Recompiling from $sourcePath/$thisDir/$appName"
+apktool b "$sourcePath/$thisDir/$appName" "$sourcePath/$thisDir/$appName.apk"
+
+userName="$USER"
+rm -r "/Users/$userName/Library/apktool/framework"
