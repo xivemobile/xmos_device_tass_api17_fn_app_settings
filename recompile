@@ -13,6 +13,3 @@ thisDir=${PWD##*/}
 
 echo "Recompiling from $sourcePath/$thisDir/$appName"
 apktool b "$sourcePath/$thisDir/$appName" "$sourcePath/$thisDir/$appName.apk"
-
-userName="$USER"
-rm -r "/Users/$userName/Library/apktool/framework"
