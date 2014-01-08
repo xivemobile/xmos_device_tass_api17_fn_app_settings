@@ -2520,7 +2520,4 @@ Qualsiasi utente può accettare le autorizzazioni delle applicazioni aggiornate 
     <string name="user_picture_title">ID foto</string>
     <string name="cell_broadcast_settings">Cell broadcast</string>
     <string name="cell_broadcast_settings_summary">Seleziona i tipi di avvisi di emergenza da visualizzare.</string>
-    <string name="OTA_Updater">Aggiornamento OTA</string>
-    <string name="ftrnxt_version">Versione FutureNext</string>
-    <string name="ftrnxt_version_default">Sconosciuta</string>
 </resources>
