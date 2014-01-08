@@ -49,7 +49,6 @@
     <public type="attr" name="markerSize" id="0x7f01002e" />
     <public type="attr" name="margin" id="0x7f01002f" />
     <public type="drawable" name="preview" id="0x7f0200e2" />
-    <public type="drawable" name="futurenext" id="0x7f0200ec" />
     <public type="drawable" name="activities_icon" id="0x7f020000" />
     <public type="drawable" name="appwidget_button_center" id="0x7f020002" />
     <public type="drawable" name="appwidget_button_left" id="0x7f020003" />
